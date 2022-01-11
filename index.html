@@ -4,21 +4,42 @@
 <head>
   <meta charset="utf-8">
   <title>Shyam's Personal Website</title>
+  <!-- External CSS-->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- internal css
+  <style media="screen">
+    body{
+      background-color:#A3E4DB;
+    }
+    hr{
+      border-style: dotted none none;
+      border-color: grey;
+      border-width: 5px;
+      height: 0px;
+      width: 5%;
+    }
+    img{
+      height: 150px;
+    }
+  </style>
+-->
 </head>
-
-<body>
+<!-- Inline CSS
+<body style="background-color:#96CEB4;">
+-->
+<body  class="content">
   <!--
   <img src="https://pbs.twimg.com/profile_images/1397166373/249277_10150191225282338_745452337_6968452_6434340_n_400x400.jpg" alt="shyam profile picture">
   -->
   <table cellspacing="20">
     <tr>
       <td>
-        <img src="images/shyam_circle.png" alt="shyam profile picture">
+        <img class="dp" src="images/shyam_circle.png" alt="shyam profile picture">
       </td>
       <td>
-        <h1>Shyam Joshi</h1>
-        <p><em>Founder of <strong>start-up <a href="https://techthink.in">Techthink</a></strong>.</em></p>
-        <p>I am an entreprenuar , Data Scientist , Web Developer and Investor. I ❤️ action & suspense movies.</p>
+        <h1 id="heading">Shyam Joshi</h1>
+        <p><em>Founder of <strong style="color:#DD3333;">start-up <a href="https://techthink.in" style="color:#DD3333;">Techthink</a></strong>.</em></p>
+        <p>I am an Entreprenuar, Investor, Data Scientist and Programmer. I ❤️ action & suspense movies.</p>
       </td>
     </tr>
   </table>
@@ -26,10 +47,11 @@
   <hr>
   <h3> Education </h3>
   <ul>
-  <li>Engineering in Electronics and Telecommunication - PREC Loni, Pune University</li>
-  <li>MBA in Information Technology Management - I2IT Pune</li>
+  <li>Engineering in Electronics and Telecommunication - PREC Loni, Pune University, India</li>
+  <li>MBA in IT - International Institute of Information Technlogy, Pune, India</li>
   </ul>
   <hr>
+  <!--
   <h3> My Hobbies </h3>
   <ol>
   <li>Listening Music</li>
@@ -37,6 +59,7 @@
   <li>Playing and Watching Cricket</li>
   </ol>
   <hr>
+  -->
   <h3>Work Experience</h3>
 
   <table cellspacing="10">
@@ -51,28 +74,28 @@
     <tbody>
       <tr>
         <td>May/2010 : Oct/2012</td>
-        <td>SAS Programmer at GSK Bangalore</td>
+        <td>SAS Programmer at GSK Bangalore, India</td>
       </tr>
       <tr>
-        <td>Nov/2012 : Jul/2015</td>
-        <td>Senior SAS Programmer at Sciformix Pune</td>
+        <td>Nov/2012 : July/2015</td>
+        <td>Senior SAS Programmer at Sciformix Pune, India</td>
       </tr>
       <tr>
         <td>Nov/2015 : Sep/2020</td>
-        <td>Senior SAS Programmer at Novartis Hyderabad</td>
+        <td>Senior SAS Programmer at Novartis Hyderabad, India</td>
       </tr>
     </tbody>
   </table>
   <hr>
   <h3>Skills</h3>
-  <table cellspacing="10">
+  <table cellspacing="15">
     <tr>
       <td>SAS Development ⭐⭐⭐⭐ </td>
       <td>Statistics ⭐⭐⭐</td>
       <td>Project Management ⭐⭐⭐⭐</td>
     </tr>
     <tr>
-      <td>Web and App Development ⭐⭐⭐</td>
+      <td>Web/App Development ⭐⭐⭐</td>
       <td>AI,ML and DL ⭐⭐⭐</td>
       <td>Business Management ⭐⭐⭐⭐</td>
     </tr>
@@ -80,16 +103,27 @@
   <hr>
   <h3>Contact Me</h3>
   <form action="mailto:shyam.m.joshi@gmail.com" method="post"enctype="text/plain">
-    <label> Your Name : </label>
-    <input type="text" name="yourName" value="">
-    <br><br>
-    <label> Your Email : </label>
-    <input type="email" name="yourEmail" value="">
-    <br><br>
-    <label>Your Message : </label><br><br>
-    <textarea name="yourMessage" rows="10" cols="80"></textarea>
-    <br><br>
-    <input type="submit" name="Submit">
+    <table cellspacing="10">
+      <tbody>
+        <tr>
+          <td>
+            <label> Your Name : </label>
+            <input type="text" name="yourName" value="">
+            <br><br>
+            <label> Your Email : </label>
+            <input type="email" name="yourEmail" value="">
+          </td>
+          <td>
+            <label>Your Message : </label>
+            <textarea name="yourMessage" rows="4" cols="40"></textarea>
+          </td>
+          <td>
+            <br>
+            <input type="submit" name="Submit" style="background-color:#DD3333; color:white;width:120px; height:40px;" >
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </form>
 </body>
 
