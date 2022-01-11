@@ -1,0 +1,42 @@
+/***********Tag Selectors***************/
+  body {
+    background-color: #212121;
+    justify-content: center;
+  }
+
+  hr {
+    border-style: dotted none none;
+    border-color: white;
+    border-width: 5px;
+    width: 5%;
+  }
+
+  img {
+    height: 280px;
+  }
+   h1,h3{
+     color: #DD3333;
+   }
+   p{
+     font-size: 22px;
+     color: white;
+   }
+  li,th,td,form{
+    font-size: 19px;
+    color:white;
+  }
+
+/***********Class Selectors***************/
+.content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.dp{
+  height: 230px;
+}
+
+/***********Id Selectors***************/
+#heading{
+  color:#DD3333;
+}
